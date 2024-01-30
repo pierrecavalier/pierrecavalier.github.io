@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Steller main styles -->
 	<link rel="stylesheet" href="assets/css/steller.css">
+    <style>
+        @media (max-width: 576px) {
+            .mobile-img-large {
+                width: 60px !important; /* further reduce the width */
+                margin-right: 0px; /* adjust the margin */
+            }
+            .container {
+                width: 100% !important; /* increase the container's width */
+            }
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
@@ -49,8 +60,8 @@
 
     <!-- Page Header -->
     <header class="header" id="home">
-        <div class="container">
-            <div class="infos col-12 col-md-6 order-1 order-md-1">
+        <div class="container d-flex flex-column-reverse flex-md-row">
+            <div class="infos col-12 col-md-6 mb-3 text-center text-md-left">       
                 <h6 class="subtitle">Hello, I'm</h6>
                 <h6 class="title">Pierre Cavalier</h6>
                 <p>Master 2 Mathematics & AI Student</p>
@@ -61,19 +72,19 @@
                     <a href="assets/file/Projects Cavalier Pierre.pdf" download="Projects Cavalier Pierre.pdf" target="_blank" class="btn btn-dark rounded">Slide of my projects</a>
                 </div>
                 
-
-                <div class="socials mt-4">
+                <div class="socials mt-4 mb-3 d-flex justify-content-center justify-content-md-start"> 
                     <a class="social-item" href="https://www.linkedin.com/in/pierre--cavalier/" target="_blank"><i class="ti-linkedin"></i></a>
                     <a class="social-item" href="https://github.com/pierrecavalier" target="_blank"><i class="ti-github"></i></a>
                 </div>
-            </div>   
-            
-            <div class="img-holder d-flex col-12 col-md-6 justify-content-center align-items-center order-2 order-md-2" style="height: 100%;">
-                <img src="assets/imgs/me.png" alt="" class="rounded-circle" style="width: 300px; height: 300px;">
             </div>
-        </div>  
-
-    <!-- Header-widget -->
+            <div class="img-holder col-12 col-md-6 d-flex justify-content-center align-items-md-center" style="height: 100%; margin-bottom: 10px;">
+                <div style="max-width: 300px; max-height: 300px; width: 100%; height: 100%;">
+                    <img src="assets/imgs/me.png" alt="" class="rounded-circle" style="width: 100%; height: 100%; object-fit: cover;">
+                 </div>
+            </div>
+            <br>
+            <br>
+        </div>
     </header>
     <!-- End of Page Header -->
     
@@ -93,7 +104,7 @@
                                 <img src="assets/imgs/paris saclay.png" alt="Image" style="width: 100%;">
                                 <div class="text-center" style="font-size: 13px;">2022-2024</div>
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 mb-3 text-center text-md-left">
                                 <strong><a href="https://www.imo.universite-paris-saclay.fr/fr/etudiants/masters/mathematiques-et-applications/m1/mathematiques-et-intelligence-artificielle/" target="_blank">
                                     Master Mathematics and Artificial Intelligence
                                 </a></strong> <br> <p style="font-size: 12px;">Shared with CentraleSupélec, Polytechnique and MVA Master.</p>
@@ -105,7 +116,7 @@
                                 <img src="assets/imgs/cs.png" alt="Image" style="width: 100%;">
                                 <div class="text-center" style="font-size: 13px;">2021-2022</div>
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 mb-3 text-center text-md-left">
                                 <strong><a href="https://www.centralesupelec.fr/en/engineering-curriculum" target="_blank">
                                     Curriculum engeering
                                 </a></strong> <br> <p style="font-size: 12px;">First year at the french engeering school Centrale Supelec. Left the cursus because it didn't meet my expectations.</p>
@@ -117,7 +128,7 @@
                                 <img src="assets/imgs/paris saclay.png" alt="Image" style="width: 100%;">
                                 <div class="text-center" style="font-size: 13px;">2018-2021</div>
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 mb-3 text-center text-md-left">
                                 <strong><a href="https://www.universite-paris-saclay.fr/formation/licence-double-diplome/mathematiques-physique-et-sciences-pour-lingenieur" target="_blank">
                                     Double degree in Mathematics and Physics
                                 </a></strong> <br> <p style="font-size: 12px;">Obtained with highest honours. 3rd year shared with ENS Paris-Saclay.</p>
@@ -131,21 +142,21 @@
                         <h3 class="title text-center" style="padding-top: 20px;">Experience</h3>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-3">
-                                <img src="assets/imgs/cnrs.png" alt="Image" style="width: 70%; margin-left: 20px;"> 
+                            <div class="col-md-3 d-flex flex-column align-items-center">
+                                <img src="assets/imgs/cnrs.png" alt="Image" style="width: 70%;"> 
                                 <div class="text-center" style="font-size: 13px;"> April to July 2023</div>
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 mb-3 text-center text-md-left">
                                 <strong> Research Assistant </strong> <br> <p style="font-size: 12px;"> Working on the Fink project supervised by Julien Peloton.</p>
                             </div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-md-3">
-                                <img src="assets/imgs/psl.png" alt="Image" style="width: 70%; margin-left: 20px;">
+                            <div class="col-md-3 d-flex flex-column align-items-center">
+                                <img src="assets/imgs/psl.png" alt="Image" style="width: 70%;">
                                 <div class="text-center" style="font-size: 13px;">June to July 2021</div>
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 mb-3 text-center text-md-left">
                                 <strong> Research Assistant </strong> <br> <p style="font-size: 12px;"> Working on the Swarm Robotics supervised by Olivier Dauchot.</p>
                             </div>
                         </div>
@@ -159,8 +170,8 @@
 <!-- Portfolio section -->
 <section id="portfolio" class="section">
     <div class="container text-center">
-        <h6 class="subtitle">Portfolio</h6>
-        <h6 class="section-title mb-4">Check my projects !</h6>
+        <h6 class="section-title">Portfolio</h6>
+        <h6 class="subsection mb-4">Check my projects !</h6>
         <p class="mb-5 pb-4">Most of the report are written in French, but githubs are in english.</p>
 
         <div class="row">
@@ -255,6 +266,7 @@
 </section>
 <!-- End of portfolio section -->
 
+
 <!-- Skills section -->
 <section id="skills" class="section">
     <div class="container text-center">
@@ -267,19 +279,19 @@
         <div class="d-flex justify-content-center">
 
             <div class="text-center" style="padding: 5px; width: 10%;">
-                <img src="assets/logo/skills/python.png" style="width: 100%;" alt="Skill 1" class="img-fluid">
+                <img src="assets/logo/skills/python.png" style="width: 100%;" alt="Skill 1" class="mobile-img-large">
                 <p style="font-size: 14px;">Python</p>
             </div>
             <div class="text-center" style="padding: 5px; width: 10%;">
-                <img src="assets/logo/skills/c++.png" style="width: 100%;" alt="Skill 2" class="img-fluid">
+                <img src="assets/logo/skills/c++.png" style="width: 100%;" alt="Skill 2" class="mobile-img-large">
                 <p style="font-size: 14px;">C++</p>
             </div>
             <div class="text-center" style="padding: 5px; width: 10%;">
-                <img src="assets/logo/skills/r.png" style="width: 100%;" alt="Skill 2" class="img-fluid">
+                <img src="assets/logo/skills/r.png" style="width: 100%;" alt="Skill 2" class="mobile-img-large">
                 <p style="font-size: 14px;">R</p>
             </div>
             <div class="text-center" style="padding: 5px; width: 10%;">
-                <img src="assets/logo/skills/matlab.png" style="width: 100%;" alt="Skill 2" class="img-fluid">
+                <img src="assets/logo/skills/matlab.png" style="width: 100%;" alt="Skill 2" class="mobile-img-large">
                 <p style="font-size: 14px;">Matlab</p>
             </div>
         </div>
@@ -380,7 +392,7 @@
     </div>
 </section>
 <!-- End of Skills sections -->
-
+<hr style="border-top: 1px solid rgb(240, 240, 240);">
 <!-- Interest section -->
 <section id="interest" class="section">
     <div class="container text-center d-flex flex-column">
