@@ -74,15 +74,14 @@ body {
   outline: 0 !important;
 }
 
+.text-center-skill {
+  width: 10%;
+}
 
-@media (max-width: 576px) {
-    .mobile-img-large {
-        width: 60px !important; /* further reduce the width */
-        margin-right: 0px; /* adjust the margin */
-    }
-    .container {
-        width: 100% !important; /* increase the container's width */
-    }
+@media screen and (max-width: 600px) {
+  .text-center-skill {
+    width: 20%;
+  }
 }
 
 
