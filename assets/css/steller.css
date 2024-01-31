@@ -74,6 +74,18 @@ body {
   outline: 0 !important;
 }
 
+
+@media (max-width: 576px) {
+    .mobile-img-large {
+        width: 60px !important; /* further reduce the width */
+        margin-right: 0px; /* adjust the margin */
+    }
+    .container {
+        width: 100% !important; /* increase the container's width */
+    }
+}
+
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -11456,7 +11468,7 @@ pre {
 .header {
   height: 94vh;
   min-height: 650px;
-  border-bottom: 1px solid #dee2e6;
+  /*border-bottom: 1px solid #dee2e6; */
 }
 
 .header .container {
