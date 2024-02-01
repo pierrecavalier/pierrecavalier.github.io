@@ -82,8 +82,11 @@ body {
   .text-center-skill {
     width: 20%;
   }
-}
 
+  .header {
+    margin-top: 100px; /* Adjust this value as needed */
+  }
+}
 
 hr {
   box-sizing: content-box;
@@ -170,7 +173,7 @@ sup {
   top: -.5em;
 }
 
-a {
+a{
   color: #ff7a57;
   text-decoration: none;
   background-color: transparent;
@@ -5100,6 +5103,10 @@ input[type="button"].btn-block {
 .card-subtitle {
   margin-top: -0.375rem;
   margin-bottom: 0;
+}
+
+.card-subtitle-link a{
+  background-color: blue;
 }
 
 .card-text:last-child {
@@ -11191,13 +11198,15 @@ pre {
 }
 
 .custom-card:hover, .custom-card:active {
-  background: #ff7a57;
+  background: #ffa087;
   color: #fff;
 }
+
 
 .custom-card:hover i, .custom-card:active i {
   color: #fff;
 }
+
 
 .testmonial-card {
   background: #fff;
